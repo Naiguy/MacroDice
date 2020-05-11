@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5FBC90D22468F45600D62A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90D12468F45600D62A29 /* AppDelegate.swift */; };
-		5FBC90D42468F45600D62A29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90D32468F45600D62A29 /* SceneDelegate.swift */; };
-		5FBC90D62468F45600D62A29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90D52468F45600D62A29 /* ViewController.swift */; };
 		5FBC90D92468F45600D62A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC90D72468F45600D62A29 /* Main.storyboard */; };
 		5FBC90DC2468F45600D62A29 /* MacroDice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90DA2468F45600D62A29 /* MacroDice.xcdatamodeld */; };
 		5FBC90DE2468F45A00D62A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC90DD2468F45A00D62A29 /* Assets.xcassets */; };
 		5FBC90E12468F45A00D62A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC90DF2468F45A00D62A29 /* LaunchScreen.storyboard */; };
 		5FBC90EC2468F45A00D62A29 /* MacroDiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90EB2468F45A00D62A29 /* MacroDiceTests.swift */; };
+		5FBC90FD2468F50300D62A29 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */; };
+		5FBC90FE2468F50300D62A29 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +30,6 @@
 /* Begin PBXFileReference section */
 		5FBC90CE2468F45600D62A29 /* MacroDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBC90D12468F45600D62A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5FBC90D32468F45600D62A29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5FBC90D52468F45600D62A29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5FBC90D82468F45600D62A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FBC90DB2468F45600D62A29 /* MacroDice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MacroDice.xcdatamodel; sourceTree = "<group>"; };
 		5FBC90DD2468F45A00D62A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +38,8 @@
 		5FBC90E72468F45A00D62A29 /* MacroDiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacroDiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBC90EB2468F45A00D62A29 /* MacroDiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroDiceTests.swift; sourceTree = "<group>"; };
 		5FBC90ED2468F45A00D62A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +81,8 @@
 		5FBC90D02468F45600D62A29 /* MacroDice */ = {
 			isa = PBXGroup;
 			children = (
+				5FBC90F62468F4BB00D62A29 /* Home */,
 				5FBC90D12468F45600D62A29 /* AppDelegate.swift */,
-				5FBC90D32468F45600D62A29 /* SceneDelegate.swift */,
-				5FBC90D52468F45600D62A29 /* ViewController.swift */,
 				5FBC90D72468F45600D62A29 /* Main.storyboard */,
 				5FBC90DD2468F45A00D62A29 /* Assets.xcassets */,
 				5FBC90DF2468F45A00D62A29 /* LaunchScreen.storyboard */,
@@ -100,6 +99,15 @@
 				5FBC90ED2468F45A00D62A29 /* Info.plist */,
 			);
 			path = MacroDiceTests;
+			sourceTree = "<group>";
+		};
+		5FBC90F62468F4BB00D62A29 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */,
+				5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FBC90E12468F45A00D62A29 /* LaunchScreen.storyboard in Resources */,
+				5FBC90FE2468F50300D62A29 /* HomeScreenViewController.xib in Resources */,
 				5FBC90DE2468F45A00D62A29 /* Assets.xcassets in Resources */,
 				5FBC90D92468F45600D62A29 /* Main.storyboard in Resources */,
 			);
@@ -203,10 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FBC90D62468F45600D62A29 /* ViewController.swift in Sources */,
 				5FBC90DC2468F45600D62A29 /* MacroDice.xcdatamodeld in Sources */,
 				5FBC90D22468F45600D62A29 /* AppDelegate.swift in Sources */,
-				5FBC90D42468F45600D62A29 /* SceneDelegate.swift in Sources */,
+				5FBC90FD2468F50300D62A29 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

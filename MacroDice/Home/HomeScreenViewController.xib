@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="MacroDice" customModuleProvider="target">
             <connections>
+                <outlet property="createButton" destination="xrg-K5-YjM" id="cF2-Wj-Bg8"/>
+                <outlet property="tableView" destination="7Iu-b1-Jse" id="rgQ-Dv-gNc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +19,37 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Iu-b1-Jse">
+                    <rect key="frame" x="16" y="128" width="382" height="718"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrg-K5-YjM" userLabel="Create Button">
+                    <rect key="frame" x="338" y="60" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="2Np-zv-rmU"/>
+                        <constraint firstAttribute="width" secondItem="xrg-K5-YjM" secondAttribute="height" id="DuQ-5i-g8z"/>
+                    </constraints>
+                    <state key="normal" image="plusIcon" backgroundImage="plusIcon"/>
+                    <connections>
+                        <action selector="createAction:" destination="-1" eventType="touchUpInside" id="U5J-IX-WZ1"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Iu-b1-Jse" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6hQ-0o-Vd7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7Iu-b1-Jse" secondAttribute="bottom" constant="16" id="CCW-7z-oaa"/>
+                <constraint firstItem="xrg-K5-YjM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="dJd-aq-c02"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xrg-K5-YjM" secondAttribute="trailing" constant="16" id="gT7-g3-XrN"/>
+                <constraint firstItem="7Iu-b1-Jse" firstAttribute="top" secondItem="xrg-K5-YjM" secondAttribute="bottom" constant="8" id="pX6-bQ-gm4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Iu-b1-Jse" secondAttribute="trailing" constant="16" id="sR7-Hm-HxA"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="140.57971014492756" y="141.96428571428569"/>
         </view>
     </objects>
+    <resources>
+        <image name="plusIcon" width="256" height="256"/>
+    </resources>
 </document>

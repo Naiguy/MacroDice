@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32D1F64E289763286228B109 /* Pods_MacroDice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA864A6AB9D616ED80D5716 /* Pods_MacroDice.framework */; };
+		5F7FFA7124B2CDA500383237 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FFA7024B2CDA500383237 /* Extensions.swift */; };
+		5F7FFA7324B2D25A00383237 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FFA7224B2D25A00383237 /* HomeScreenViewModel.swift */; };
+		5F7FFA7624B2D27C00383237 /* MacroMakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FFA7524B2D27C00383237 /* MacroMakerViewModel.swift */; };
+		5F9E79B6246D0DFE00ED2228 /* MacroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E79B4246D0DFE00ED2228 /* MacroCell.swift */; };
+		5F9E79B7246D0DFE00ED2228 /* MacroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E79B5246D0DFE00ED2228 /* MacroCell.xib */; };
+		5FBBF3A724B1ADF4002FE46F /* MacroMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBBF3A524B1ADF4002FE46F /* MacroMakerViewController.swift */; };
+		5FBBF3A824B1ADF4002FE46F /* MacroMakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBBF3A624B1ADF4002FE46F /* MacroMakerViewController.xib */; };
 		5FBC90D22468F45600D62A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90D12468F45600D62A29 /* AppDelegate.swift */; };
 		5FBC90DC2468F45600D62A29 /* MacroDice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90DA2468F45600D62A29 /* MacroDice.xcdatamodeld */; };
 		5FBC90DE2468F45A00D62A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC90DD2468F45A00D62A29 /* Assets.xcassets */; };
@@ -27,6 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F7FFA7024B2CDA500383237 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5F7FFA7224B2D25A00383237 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		5F7FFA7524B2D27C00383237 /* MacroMakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroMakerViewModel.swift; sourceTree = "<group>"; };
+		5F9E79B4246D0DFE00ED2228 /* MacroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroCell.swift; sourceTree = "<group>"; };
+		5F9E79B5246D0DFE00ED2228 /* MacroCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MacroCell.xib; sourceTree = "<group>"; };
+		5FBBF3A524B1ADF4002FE46F /* MacroMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroMakerViewController.swift; sourceTree = "<group>"; };
+		5FBBF3A624B1ADF4002FE46F /* MacroMakerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MacroMakerViewController.xib; sourceTree = "<group>"; };
 		5FBC90CE2468F45600D62A29 /* MacroDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBC90D12468F45600D62A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FBC90DB2468F45600D62A29 /* MacroDice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MacroDice.xcdatamodel; sourceTree = "<group>"; };
@@ -38,6 +53,9 @@
 		5FBC90ED2468F45A00D62A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		C71C9C61287FD06669813110 /* Pods-MacroDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacroDice.debug.xcconfig"; path = "Target Support Files/Pods-MacroDice/Pods-MacroDice.debug.xcconfig"; sourceTree = "<group>"; };
+		EEF16D39D97E80BF8231A1B5 /* Pods-MacroDice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacroDice.release.xcconfig"; path = "Target Support Files/Pods-MacroDice/Pods-MacroDice.release.xcconfig"; sourceTree = "<group>"; };
+		FEA864A6AB9D616ED80D5716 /* Pods_MacroDice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacroDice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D1F64E289763286228B109 /* Pods_MacroDice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +77,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		570B0CF93FC0130C149C8617 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEA864A6AB9D616ED80D5716 /* Pods_MacroDice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F7FFA7424B2D26400383237 /* MacroCells */ = {
+			isa = PBXGroup;
+			children = (
+				5F9E79B4246D0DFE00ED2228 /* MacroCell.swift */,
+				5F9E79B5246D0DFE00ED2228 /* MacroCell.xib */,
+			);
+			path = MacroCells;
+			sourceTree = "<group>";
+		};
+		5FBBF3A424B1ADBF002FE46F /* MacroMaker */ = {
+			isa = PBXGroup;
+			children = (
+				5FBBF3A524B1ADF4002FE46F /* MacroMakerViewController.swift */,
+				5FBBF3A624B1ADF4002FE46F /* MacroMakerViewController.xib */,
+				5F7FFA7524B2D27C00383237 /* MacroMakerViewModel.swift */,
+			);
+			path = MacroMaker;
+			sourceTree = "<group>";
+		};
 		5FBC90C52468F45600D62A29 = {
 			isa = PBXGroup;
 			children = (
 				5FBC90D02468F45600D62A29 /* MacroDice */,
 				5FBC90EA2468F45A00D62A29 /* MacroDiceTests */,
 				5FBC90CF2468F45600D62A29 /* Products */,
+				FB96E2386CE0C30FF1347800 /* Pods */,
+				570B0CF93FC0130C149C8617 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +127,8 @@
 		5FBC90D02468F45600D62A29 /* MacroDice */ = {
 			isa = PBXGroup;
 			children = (
+				5F7FFA7024B2CDA500383237 /* Extensions.swift */,
+				5FBBF3A424B1ADBF002FE46F /* MacroMaker */,
 				5FBC90F62468F4BB00D62A29 /* Home */,
 				5FBC90D12468F45600D62A29 /* AppDelegate.swift */,
 				5FBC90DD2468F45A00D62A29 /* Assets.xcassets */,
@@ -101,10 +151,21 @@
 		5FBC90F62468F4BB00D62A29 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5F7FFA7424B2D26400383237 /* MacroCells */,
 				5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */,
 				5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */,
+				5F7FFA7224B2D25A00383237 /* HomeScreenViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		FB96E2386CE0C30FF1347800 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C71C9C61287FD06669813110 /* Pods-MacroDice.debug.xcconfig */,
+				EEF16D39D97E80BF8231A1B5 /* Pods-MacroDice.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FBC90F02468F45A00D62A29 /* Build configuration list for PBXNativeTarget "MacroDice" */;
 			buildPhases = (
+				55B478CDC1AAB8E79ACF8A04 /* [CP] Check Pods Manifest.lock */,
 				5FBC90CA2468F45600D62A29 /* Sources */,
 				5FBC90CB2468F45600D62A29 /* Frameworks */,
 				5FBC90CC2468F45600D62A29 /* Resources */,
+				59EEFF276CD2FB44EFC9E633 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,9 +251,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9E79B7246D0DFE00ED2228 /* MacroCell.xib in Resources */,
 				5FBC90E12468F45A00D62A29 /* LaunchScreen.storyboard in Resources */,
 				5FBC90FE2468F50300D62A29 /* HomeScreenViewController.xib in Resources */,
 				5FBC90DE2468F45A00D62A29 /* Assets.xcassets in Resources */,
+				5FBBF3A824B1ADF4002FE46F /* MacroMakerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,14 +268,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55B478CDC1AAB8E79ACF8A04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacroDice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59EEFF276CD2FB44EFC9E633 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacroDice/Pods-MacroDice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacroDice/Pods-MacroDice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MacroDice/Pods-MacroDice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5FBC90CA2468F45600D62A29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9E79B6246D0DFE00ED2228 /* MacroCell.swift in Sources */,
+				5F7FFA7124B2CDA500383237 /* Extensions.swift in Sources */,
+				5F7FFA7624B2D27C00383237 /* MacroMakerViewModel.swift in Sources */,
+				5F7FFA7324B2D25A00383237 /* HomeScreenViewModel.swift in Sources */,
 				5FBC90DC2468F45600D62A29 /* MacroDice.xcdatamodeld in Sources */,
 				5FBC90D22468F45600D62A29 /* AppDelegate.swift in Sources */,
 				5FBC90FD2468F50300D62A29 /* HomeScreenViewController.swift in Sources */,
+				5FBBF3A724B1ADF4002FE46F /* MacroMakerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +472,7 @@
 		};
 		5FBC90F12468F45A00D62A29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71C9C61287FD06669813110 /* Pods-MacroDice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +491,7 @@
 		};
 		5FBC90F22468F45A00D62A29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF16D39D97E80BF8231A1B5 /* Pods-MacroDice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

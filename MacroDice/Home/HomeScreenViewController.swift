@@ -59,5 +59,7 @@ extension HomeScreenViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func addDefaultCell() {
+        
+    }
 }

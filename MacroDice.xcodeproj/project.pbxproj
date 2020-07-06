@@ -22,6 +22,7 @@
 		5FBC90EC2468F45A00D62A29 /* MacroDiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90EB2468F45A00D62A29 /* MacroDiceTests.swift */; };
 		5FBC90FD2468F50300D62A29 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */; };
 		5FBC90FE2468F50300D62A29 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */; };
+		5FC0CBCE24B3D79900FB7E48 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0CBCD24B3D79900FB7E48 /* Macro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5FBC90ED2468F45A00D62A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		5FC0CBCD24B3D79900FB7E48 /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 		C71C9C61287FD06669813110 /* Pods-MacroDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacroDice.debug.xcconfig"; path = "Target Support Files/Pods-MacroDice/Pods-MacroDice.debug.xcconfig"; sourceTree = "<group>"; };
 		EEF16D39D97E80BF8231A1B5 /* Pods-MacroDice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacroDice.release.xcconfig"; path = "Target Support Files/Pods-MacroDice/Pods-MacroDice.release.xcconfig"; sourceTree = "<group>"; };
 		FEA864A6AB9D616ED80D5716 /* Pods_MacroDice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacroDice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				5F7FFA7024B2CDA500383237 /* Extensions.swift */,
+				5FC0CBCD24B3D79900FB7E48 /* Macro.swift */,
 				5FBBF3A424B1ADBF002FE46F /* MacroMaker */,
 				5FBC90F62468F4BB00D62A29 /* Home */,
 				5FBC90D12468F45600D62A29 /* AppDelegate.swift */,
@@ -322,6 +325,7 @@
 				5FBC90DC2468F45600D62A29 /* MacroDice.xcdatamodeld in Sources */,
 				5FBC90D22468F45600D62A29 /* AppDelegate.swift in Sources */,
 				5FBC90FD2468F50300D62A29 /* HomeScreenViewController.swift in Sources */,
+				5FC0CBCE24B3D79900FB7E48 /* Macro.swift in Sources */,
 				5FBBF3A724B1ADF4002FE46F /* MacroMakerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

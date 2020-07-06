@@ -12,7 +12,6 @@ import Foundation
 class MacroMakerViewController: UIViewController, UIPickerViewDelegate {
 
     // Macro Name - Text Field
-    // Macro Signature - Label
     // Macro Dice Edit Button - X dY + Z
     // Create button - 
     

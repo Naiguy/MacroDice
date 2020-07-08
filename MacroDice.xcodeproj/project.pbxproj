@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		32D1F64E289763286228B109 /* Pods_MacroDice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA864A6AB9D616ED80D5716 /* Pods_MacroDice.framework */; };
-		5F7FFA7124B2CDA500383237 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FFA7024B2CDA500383237 /* Extensions.swift */; };
+		5F7FFA7124B2CDA500383237 /* Constants+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FFA7024B2CDA500383237 /* Constants+Extensions.swift */; };
 		5F7FFA7324B2D25A00383237 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FFA7224B2D25A00383237 /* HomeScreenViewModel.swift */; };
 		5F7FFA7624B2D27C00383237 /* MacroMakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FFA7524B2D27C00383237 /* MacroMakerViewModel.swift */; };
 		5F9E79B6246D0DFE00ED2228 /* MacroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E79B4246D0DFE00ED2228 /* MacroCell.swift */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F7FFA7024B2CDA500383237 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5F7FFA7024B2CDA500383237 /* Constants+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Extensions.swift"; sourceTree = "<group>"; };
 		5F7FFA7224B2D25A00383237 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
 		5F7FFA7524B2D27C00383237 /* MacroMakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroMakerViewModel.swift; sourceTree = "<group>"; };
 		5F9E79B4246D0DFE00ED2228 /* MacroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroCell.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		5FBC90D02468F45600D62A29 /* MacroDice */ = {
 			isa = PBXGroup;
 			children = (
-				5F7FFA7024B2CDA500383237 /* Extensions.swift */,
+				5F7FFA7024B2CDA500383237 /* Constants+Extensions.swift */,
 				5FC0CBCD24B3D79900FB7E48 /* Macro.swift */,
 				5FBBF3A424B1ADBF002FE46F /* MacroMaker */,
 				5FBC90F62468F4BB00D62A29 /* Home */,
@@ -319,7 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9E79B6246D0DFE00ED2228 /* MacroCell.swift in Sources */,
-				5F7FFA7124B2CDA500383237 /* Extensions.swift in Sources */,
+				5F7FFA7124B2CDA500383237 /* Constants+Extensions.swift in Sources */,
 				5F7FFA7624B2D27C00383237 /* MacroMakerViewModel.swift in Sources */,
 				5F7FFA7324B2D25A00383237 /* HomeScreenViewModel.swift in Sources */,
 				5FBC90DC2468F45600D62A29 /* MacroDice.xcdatamodeld in Sources */,

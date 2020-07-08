@@ -9,8 +9,8 @@
 import Foundation
 
 public struct Macro {
-    var name : String
-    var signature : String
+    var name: String
+    var signature: String
     
     init(name: String, signature: String) {
         self.name = name

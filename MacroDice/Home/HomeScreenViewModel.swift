@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 class HomeScreenViewModel {
-    private var macros : [Macro] = []
+    private var macros: [Macro] = []
     
     func addMacroAtEnd(macro: Macro) {
         macros.append(macro)
@@ -32,7 +33,7 @@ class HomeScreenViewModel {
     }
     
     func getMacroNames() -> [String] {
-        var resultList : [String] = []
+        var resultList: [String] = []
         for eachMacro in macros {
             resultList.append(eachMacro.name)
         }
@@ -40,7 +41,7 @@ class HomeScreenViewModel {
     }
     
     func getMacroSignatures() -> [String] {
-        var resultList : [String] = []
+        var resultList: [String] = []
         for eachMacro in macros {
             resultList.append(eachMacro.signature)
         }

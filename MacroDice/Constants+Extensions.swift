@@ -9,6 +9,14 @@
 import Foundation
 import UIKit
 
+public enum Constants {
+    static let cornerRadius: CGFloat = 15
+    static let pickerDiceNumbers: [Int] = Array(1...20)
+    static let pickerDiceOptions: [String] = ["d4","d6","d8","d10","d12","d20","d100"]
+    static let pickerModifierTypeOptions: [String] = ["+","-"]
+    static let pickerModifierNumbers: [Int] = Array(-10...50)
+}
+
 extension UIButton {
     func pulsate() {
         let originalColor = self.titleColor(for: .normal)
@@ -30,4 +38,8 @@ extension UIButton {
     func animateRed() {
         //
     }
+}
+
+protocol MacroPassingDelegate {
+    func didCompleteMacro(_ macro: Macro)
 }

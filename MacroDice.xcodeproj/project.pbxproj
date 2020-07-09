@@ -23,6 +23,9 @@
 		5FBC90FD2468F50300D62A29 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */; };
 		5FBC90FE2468F50300D62A29 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */; };
 		5FC0CBCE24B3D79900FB7E48 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0CBCD24B3D79900FB7E48 /* Macro.swift */; };
+		5FFB16D224B784BB004B612A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB16D024B784BB004B612A /* ResultsViewController.swift */; };
+		5FFB16D324B784BB004B612A /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFB16D124B784BB004B612A /* ResultsViewController.xib */; };
+		5FFB16D524B784C6004B612A /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB16D424B784C6004B612A /* ResultsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 		5FC0CBCD24B3D79900FB7E48 /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		5FFB16D024B784BB004B612A /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		5FFB16D124B784BB004B612A /* ResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
+		5FFB16D424B784C6004B612A /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
 		C71C9C61287FD06669813110 /* Pods-MacroDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacroDice.debug.xcconfig"; path = "Target Support Files/Pods-MacroDice/Pods-MacroDice.debug.xcconfig"; sourceTree = "<group>"; };
 		EEF16D39D97E80BF8231A1B5 /* Pods-MacroDice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacroDice.release.xcconfig"; path = "Target Support Files/Pods-MacroDice/Pods-MacroDice.release.xcconfig"; sourceTree = "<group>"; };
 		FEA864A6AB9D616ED80D5716 /* Pods_MacroDice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacroDice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +135,7 @@
 		5FBC90D02468F45600D62A29 /* MacroDice */ = {
 			isa = PBXGroup;
 			children = (
+				5FFB16CF24B7849C004B612A /* Results */,
 				5F7FFA7024B2CDA500383237 /* Constants+Extensions.swift */,
 				5FC0CBCD24B3D79900FB7E48 /* Macro.swift */,
 				5FBBF3A424B1ADBF002FE46F /* MacroMaker */,
@@ -160,6 +167,16 @@
 				5F7FFA7224B2D25A00383237 /* HomeScreenViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		5FFB16CF24B7849C004B612A /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				5FFB16D024B784BB004B612A /* ResultsViewController.swift */,
+				5FFB16D124B784BB004B612A /* ResultsViewController.xib */,
+				5FFB16D424B784C6004B612A /* ResultsViewModel.swift */,
+			);
+			path = Results;
 			sourceTree = "<group>";
 		};
 		FB96E2386CE0C30FF1347800 /* Pods */ = {
@@ -257,6 +274,7 @@
 				5F9E79B7246D0DFE00ED2228 /* MacroCell.xib in Resources */,
 				5FBC90E12468F45A00D62A29 /* LaunchScreen.storyboard in Resources */,
 				5FBC90FE2468F50300D62A29 /* HomeScreenViewController.xib in Resources */,
+				5FFB16D324B784BB004B612A /* ResultsViewController.xib in Resources */,
 				5FBC90DE2468F45A00D62A29 /* Assets.xcassets in Resources */,
 				5FBBF3A824B1ADF4002FE46F /* MacroMakerViewController.xib in Resources */,
 			);
@@ -321,11 +339,13 @@
 				5F9E79B6246D0DFE00ED2228 /* MacroCell.swift in Sources */,
 				5F7FFA7124B2CDA500383237 /* Constants+Extensions.swift in Sources */,
 				5F7FFA7624B2D27C00383237 /* MacroMakerViewModel.swift in Sources */,
+				5FFB16D224B784BB004B612A /* ResultsViewController.swift in Sources */,
 				5F7FFA7324B2D25A00383237 /* HomeScreenViewModel.swift in Sources */,
 				5FBC90DC2468F45600D62A29 /* MacroDice.xcdatamodeld in Sources */,
 				5FBC90D22468F45600D62A29 /* AppDelegate.swift in Sources */,
 				5FBC90FD2468F50300D62A29 /* HomeScreenViewController.swift in Sources */,
 				5FC0CBCE24B3D79900FB7E48 /* Macro.swift in Sources */,
+				5FFB16D524B784C6004B612A /* ResultsViewModel.swift in Sources */,
 				5FBBF3A724B1ADF4002FE46F /* MacroMakerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,7 @@ class HomeScreenViewController: UIViewController {
     @IBAction func createAction(_ sender: UIButton) {
         sender.pulsate()
         let newViewController = MacroMakerViewController()
-        newViewController.macroDelegate = self as? MacroPassingDelegate
+        newViewController.macroDelegate = self as MacroPassingDelegate
         present(newViewController, animated: true, completion: nil)
     }
     var mainColor = UIColor.darkGray

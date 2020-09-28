@@ -22,6 +22,7 @@ class MacroMakerViewController: UIViewController {
     
     @IBOutlet weak var macroName: UITextField!
     @IBOutlet weak var macroSignaturePicker: UIPickerView!
+    @IBOutlet weak var macroImage: UIImageView!
     @IBOutlet weak var pickerConfirmButton: UIButton!
     
     
@@ -35,6 +36,7 @@ class MacroMakerViewController: UIViewController {
         macroSignaturePicker.selectRow(0, inComponent: 0, animated: true)
         macroSignaturePicker.selectRow(5, inComponent: 1, animated: true)
         macroSignaturePicker.selectRow(10, inComponent: 2, animated: true)
+        macroImage.fadeInAndOut()
     }
     
     func setupPicker() {
@@ -90,7 +92,8 @@ extension MacroMakerViewController: UIPickerViewDelegate, UIPickerViewDataSource
             } else {
                 return "+\(Constants.pickerModifierNumbers[row])"
             }
-        default: return "ERROR"
+        default:
+                return "ERROR"
         }
     }
     

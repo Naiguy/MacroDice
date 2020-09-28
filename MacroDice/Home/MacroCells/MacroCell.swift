@@ -18,7 +18,7 @@ class MacroCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        iconImage.backgroundColor = .red
+        iconImage.backgroundColor = .lightGray
         iconImage.layer.cornerRadius = Constants.cornerRadius
     }
 

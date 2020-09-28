@@ -40,6 +40,14 @@ extension UIButton {
     }
 }
 
+extension UIView {
+    func fadeInAndOut() {
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: [UIView.AnimationOptions.curveEaseIn, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+            self.backgroundColor = UIColor.clear
+        }, completion: nil)
+    }
+}
+
 protocol MacroPassingDelegate {
     func didCompleteMacro(_ macro: Macro)
 }

@@ -22,7 +22,7 @@ class HomeScreenViewController: UIViewController {
     }
     var mainColor = UIColor.darkGray
     var secondaryColor = UIColor.white
-    var shadowColor = UIColor.red
+    var shadowColor = UIColor.lightGray
     var shadowValidColor = UIColor.green
     
     var viewModel: HomeScreenViewModel!
@@ -54,7 +54,6 @@ extension HomeScreenViewController: UITableViewDelegate, UITableViewDataSource {
         let macroCellNib = UINib(nibName: "MacroCell", bundle: nil)
         tableView.register(macroCellNib, forCellReuseIdentifier: "MacroCell")
         tableView.rowHeight = 100 // Rewrite for size classes!
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

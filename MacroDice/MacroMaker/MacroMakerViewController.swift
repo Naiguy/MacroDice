@@ -8,10 +8,14 @@
 
 import UIKit
 import Foundation
+import CoreGraphics
 
-class MacroMakerViewController: UIViewController {
+class MacroMakerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var macroDelegate: MacroPassingDelegate!
+    var imageIsChosen: Bool!
+    let imagePicker = UIImagePickerController()
+    
 
     @IBAction func confirmAction(_ sender: UIButton) {
         self.dismiss(animated: true) {
@@ -19,6 +23,9 @@ class MacroMakerViewController: UIViewController {
             self.macroDelegate.didCompleteMacro(newMacro)
         }
     }
+    
+    
+    @IBOutlet weak var imageTapped: UIImageView!
     
     @IBOutlet weak var macroName: UITextField!
     @IBOutlet weak var macroSignaturePicker: UIPickerView!
@@ -30,7 +37,9 @@ class MacroMakerViewController: UIViewController {
         super.viewDidLoad()
         title = "Create a Macro"
         setupPicker()
+        setupImage()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         macroSignaturePicker.selectRow(0, inComponent: 0, animated: true)
@@ -39,9 +48,24 @@ class MacroMakerViewController: UIViewController {
         macroImage.fadeInAndOut()
     }
     
+    @objc func chooseImage() {
+        macroImage.nukeAllAnimations()
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
     func setupPicker() {
         macroSignaturePicker.delegate = self
         macroSignaturePicker.dataSource = self
+    }
+    
+    func setupImage() {
+        macroImage.isUserInteractionEnabled = true
+        imageIsChosen = false
+        imagePicker.delegate = self
+        macroImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(chooseImage)))
+        
     }
     
     func extractMacroFromSelection() -> Macro {
@@ -97,7 +121,17 @@ extension MacroMakerViewController: UIPickerViewDelegate, UIPickerViewDataSource
         }
     }
     
-    
-    
-    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            macroImage.contentMode = .scaleAspectFill
+            macroImage.clipsToBounds = true
+            let pickedImageHeight = pickedImage.cgImage?.height
+            let pickedImageWidth = pickedImage.cgImage?.width
+            let heightIsLesser = pickedImageHeight! < pickedImageWidth!
+            
+            macroImage.image = pickedImage //.crop(to: macroImage.bounds)
+            
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreGraphics
 
 public enum Constants {
     static let cornerRadius: CGFloat = 15
@@ -42,12 +43,27 @@ extension UIButton {
 
 extension UIView {
     func fadeInAndOut() {
-        UIView.animate(withDuration: 1.0, delay: 0.0, options: [UIView.AnimationOptions.curveEaseIn, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: [UIView.AnimationOptions.curveEaseIn, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse, UIView.AnimationOptions.allowUserInteraction], animations: {
             self.backgroundColor = UIColor.clear
         }, completion: nil)
+    }
+    
+    func nukeAllAnimations() {
+        self.subviews.forEach({$0.layer.removeAllAnimations()})
+        self.layer.removeAllAnimations()
+        self.layoutIfNeeded()
+    }
+}
+
+extension UIImage {
+    func crop(to rect: CGRect) -> UIImage {
+        guard let cgImage = self.cgImage else { return UIImage() }
+        let croppedCGImage = cgImage.cropping(to: rect)
+        return UIImage(cgImage: croppedCGImage!)
     }
 }
 
 protocol MacroPassingDelegate {
     func didCompleteMacro(_ macro: Macro)
 }
+

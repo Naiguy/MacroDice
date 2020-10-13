@@ -23,6 +23,9 @@
 		5FBC90FD2468F50300D62A29 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */; };
 		5FBC90FE2468F50300D62A29 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */; };
 		5FC0CBCE24B3D79900FB7E48 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0CBCD24B3D79900FB7E48 /* Macro.swift */; };
+		5FC5A0F325350F0400E5CF1F /* ActionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5A0F125350F0400E5CF1F /* ActionsCell.swift */; };
+		5FC5A0F425350F0400E5CF1F /* ActionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC5A0F225350F0400E5CF1F /* ActionsCell.xib */; };
+		5FC5A0F625356EDE00E5CF1F /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5A0F525356EDE00E5CF1F /* SpinnerViewController.swift */; };
 		5FFB16D224B784BB004B612A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB16D024B784BB004B612A /* ResultsViewController.swift */; };
 		5FFB16D324B784BB004B612A /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFB16D124B784BB004B612A /* ResultsViewController.xib */; };
 		5FFB16D524B784C6004B612A /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB16D424B784C6004B612A /* ResultsViewModel.swift */; };
@@ -58,6 +61,9 @@
 		5FBC90FB2468F50300D62A29 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		5FBC90FC2468F50300D62A29 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 		5FC0CBCD24B3D79900FB7E48 /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		5FC5A0F125350F0400E5CF1F /* ActionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsCell.swift; sourceTree = "<group>"; };
+		5FC5A0F225350F0400E5CF1F /* ActionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionsCell.xib; sourceTree = "<group>"; };
+		5FC5A0F525356EDE00E5CF1F /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		5FFB16D024B784BB004B612A /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		5FFB16D124B784BB004B612A /* ResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
 		5FFB16D424B784C6004B612A /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
@@ -98,6 +104,8 @@
 			children = (
 				5F9E79B4246D0DFE00ED2228 /* MacroCell.swift */,
 				5F9E79B5246D0DFE00ED2228 /* MacroCell.xib */,
+				5FC5A0F125350F0400E5CF1F /* ActionsCell.swift */,
+				5FC5A0F225350F0400E5CF1F /* ActionsCell.xib */,
 			);
 			path = MacroCells;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 				5FFB16CF24B7849C004B612A /* Results */,
 				5F7FFA7024B2CDA500383237 /* Constants+Extensions.swift */,
 				5FC0CBCD24B3D79900FB7E48 /* Macro.swift */,
+				5FC5A0F525356EDE00E5CF1F /* SpinnerViewController.swift */,
 				5FBBF3A424B1ADBF002FE46F /* MacroMaker */,
 				5FBC90F62468F4BB00D62A29 /* Home */,
 				5FBC90D12468F45600D62A29 /* AppDelegate.swift */,
@@ -276,6 +285,7 @@
 				5FBC90FE2468F50300D62A29 /* HomeScreenViewController.xib in Resources */,
 				5FFB16D324B784BB004B612A /* ResultsViewController.xib in Resources */,
 				5FBC90DE2468F45A00D62A29 /* Assets.xcassets in Resources */,
+				5FC5A0F425350F0400E5CF1F /* ActionsCell.xib in Resources */,
 				5FBBF3A824B1ADF4002FE46F /* MacroMakerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,8 +349,10 @@
 				5F9E79B6246D0DFE00ED2228 /* MacroCell.swift in Sources */,
 				5F7FFA7124B2CDA500383237 /* Constants+Extensions.swift in Sources */,
 				5F7FFA7624B2D27C00383237 /* MacroMakerViewModel.swift in Sources */,
+				5FC5A0F625356EDE00E5CF1F /* SpinnerViewController.swift in Sources */,
 				5FFB16D224B784BB004B612A /* ResultsViewController.swift in Sources */,
 				5F7FFA7324B2D25A00383237 /* HomeScreenViewModel.swift in Sources */,
+				5FC5A0F325350F0400E5CF1F /* ActionsCell.swift in Sources */,
 				5FBC90DC2468F45600D62A29 /* MacroDice.xcdatamodeld in Sources */,
 				5FBC90D22468F45600D62A29 /* AppDelegate.swift in Sources */,
 				5FBC90FD2468F50300D62A29 /* HomeScreenViewController.swift in Sources */,

@@ -31,13 +31,16 @@ class MacroMakerViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var macroSignaturePicker: UIPickerView!
     @IBOutlet weak var macroImage: UIImageView!
     @IBOutlet weak var pickerConfirmButton: UIButton!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Create a Macro"
+        
         setupPicker()
         setupImage()
+        setupLoadingIndicator()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,10 +51,29 @@ class MacroMakerViewController: UIViewController, UIImagePickerControllerDelegat
         macroImage.fadeInAndOut()
     }
     
+    func createSpinnerView() {
+        let child = SpinnerViewController()
+
+        // add the spinner view controller
+        addChild(child)
+        child.view.frame = view.frame
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+
+        // wait two seconds to simulate some work happening
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            // then remove the spinner view controller
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
+    }
+    
     @objc func chooseImage() {
         macroImage.nukeAllAnimations()
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
+        createSpinnerView()
         self.present(imagePicker, animated: true, completion: nil)
     }
     
@@ -65,7 +87,11 @@ class MacroMakerViewController: UIViewController, UIImagePickerControllerDelegat
         imageIsChosen = false
         imagePicker.delegate = self
         macroImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(chooseImage)))
-        
+    }
+    
+    func setupLoadingIndicator() {
+        loadingIndicator.stopAnimating()
+        loadingIndicator.isHidden = true
     }
     
     func extractMacroFromSelection() -> Macro {

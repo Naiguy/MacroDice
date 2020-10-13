@@ -20,11 +20,10 @@ class HomeScreenViewController: UIViewController {
         newViewController.macroDelegate = self as MacroPassingDelegate
         present(newViewController, animated: true, completion: nil)
     }
-    var mainColor = UIColor.darkGray
+    var mainColor = UIColor.systemTeal
     var secondaryColor = UIColor.white
     var shadowColor = UIColor.lightGray
     var shadowValidColor = UIColor.green
-    
     var viewModel: HomeScreenViewModel!
     
     override func viewDidLoad() {
@@ -33,6 +32,9 @@ class HomeScreenViewController: UIViewController {
         setupCreateButton()
         setupTableView()
         viewModel = HomeScreenViewModel()
+        //navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Avenir Next", size: 24)!]
     }
     
     private func setupCreateButton() {
@@ -42,9 +44,6 @@ class HomeScreenViewController: UIViewController {
         //createButton.layer.shadowRadius = 5
         //createButton.layer.shadowOpacity = 0.5
     }
-    
-    
-    
 }
 
 extension HomeScreenViewController: UITableViewDelegate, UITableViewDataSource {
@@ -54,6 +53,8 @@ extension HomeScreenViewController: UITableViewDelegate, UITableViewDataSource {
         let macroCellNib = UINib(nibName: "MacroCell", bundle: nil)
         tableView.register(macroCellNib, forCellReuseIdentifier: "MacroCell")
         tableView.rowHeight = 100 // Rewrite for size classes!
+        tableView.backgroundColor = mainColor
+        tableView.separatorStyle = .none
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,6 +76,7 @@ extension HomeScreenViewController: UITableViewDelegate, UITableViewDataSource {
         cell.contentView.layer.borderWidth = 3
         cell.contentView.layer.cornerRadius = Constants.cornerRadius
         cell.contentView.backgroundColor = .clear
+        cell.backgroundColor = mainColor
         return cell
     }
     
@@ -85,6 +87,17 @@ extension HomeScreenViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 10
+    }
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+            //
+        }
+        
+        let edit = UITableViewRowAction(style: .normal, title: "Edit") { (action, indexPath) in
+            //
+        }
+        
+        return [delete, edit]
     }
 }
 

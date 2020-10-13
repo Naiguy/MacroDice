@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="ImageTapped" destination="6hV-8U-mII" id="5H6-dJ-IRW"/>
                 <outlet property="imageTapped" destination="6hV-8U-mII" id="D4f-dX-Zdt"/>
+                <outlet property="loadingIndicator" destination="1cS-Jy-dVr" id="oDj-2A-UL7"/>
                 <outlet property="macroImage" destination="6hV-8U-mII" id="o9u-cE-q3X"/>
                 <outlet property="macroName" destination="dIa-VK-2qA" id="UZ4-Lc-Mmm"/>
                 <outlet property="macroSignaturePicker" destination="AM2-3P-zOi" id="c5P-I8-WW7"/>
@@ -67,6 +68,10 @@
                         <constraint firstAttribute="trailing" secondItem="dIa-VK-2qA" secondAttribute="trailing" id="xyR-pb-z2g"/>
                     </constraints>
                 </stackView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" id="1cS-Jy-dVr">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
